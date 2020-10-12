@@ -22,8 +22,6 @@ const imageloaded = () => {
   }
 };
 
-
-
 const displayPhotos = () => {
   imagesLoaded = 0;
   totalImages = photoArray.length;
@@ -36,8 +34,6 @@ const displayPhotos = () => {
   imageContainer.innerHTML = photos;
 };
 
-
-
 // get photos from Unsplash API
 
 const getPhotos = async () => {
@@ -48,7 +44,7 @@ const getPhotos = async () => {
     displayPhotos();
   } catch (error) {
     //catch error
-    // throw new Error(error.message);
+    throw new Error(error.message);
   }
 };
 

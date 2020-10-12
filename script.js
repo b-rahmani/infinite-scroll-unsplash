@@ -22,7 +22,7 @@ const imageloaded = () => {
   }
 };
 
-let photos = "";
+
 
 const displayPhotos = () => {
   imagesLoaded = 0;
